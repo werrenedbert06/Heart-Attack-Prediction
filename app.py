@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
-scaler = joblib.load("artifacts/preprocessor.pkl")
-model = joblib.load("artifacts/model.pkl")
+scaler = joblib.load("preprocessor.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.title('Machine Learning Heart Attack Risk Detection (for age 25 to 80 only)')
@@ -95,3 +95,4 @@ def make_prediction(features):
 
 if __name__ == '__main__':
     main()
+
