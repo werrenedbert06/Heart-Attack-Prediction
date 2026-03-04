@@ -4,8 +4,8 @@ import pandas as pd
 
 @st.cache_resource
 def load_artifacts():
-    scaler = joblib.load("artifacts/preprocessor.pkl")
-    model  = joblib.load("artifacts/model.pkl")
+    scaler = joblib.load("preprocessor.pkl")
+    model  = joblib.load("model.pkl")
     return scaler, model
 
 
@@ -88,3 +88,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
