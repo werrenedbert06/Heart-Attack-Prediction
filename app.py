@@ -20,7 +20,7 @@ def main():
     sex = gender_map[sex_label]
     cp = st.radio('apa anda pernah mengalami sakit dibagian dada? dari level 0 sampai 3', [0, 1, 2, 3])
     trestbps = st.slider('Tekanan darah', min_value = 94.0, max_value = 200.0, value = 120.0, step = 0.1)
-    chol = st.slider('Cholestrol', min_value=126.0, max_value=564.0, value=200.0, step = 0.1)
+    chol = st.slider('Cholestrol', min_value=126.0, max_value=564.0, value= 200.0, step = 0.1)
     blood_sugar_bin = {
         "Yes":1,
         "No":0
@@ -95,4 +95,3 @@ def make_prediction(features):
 
 if __name__ == '__main__':
     main()
-
